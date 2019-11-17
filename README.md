@@ -2,6 +2,8 @@
 A fully-responsive and accurate recreation of apple.com/ca in October 2019.
 It is populated with content from Wikipedia about iOS Jailbreaking.
 
+<img width="1677" alt="website_preview" src="https://user-images.githubusercontent.com/38898536/69015800-cc2bf080-0965-11ea-877f-7a37387f6aa2.png">
+
 
 
 • All iPhone mockups were made with MockUPhone using my own screenshots
