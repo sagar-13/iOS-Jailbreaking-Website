@@ -1,0 +1,445 @@
+
+html {
+	scroll-behavior: smooth;
+  }
+  
+header{
+	
+	height: 44px;
+	width: 100%;
+	background-color: white;
+}
+
+/* Styling of apple logo in various locations */
+img.apple-logo {
+	height: 22px;
+	
+}
+img.apple-logo-inblock {
+	height: 40px;
+}
+nav ul li img.apple-logo{
+	margin-top: 10px;
+	float: left;	
+}
+nav img.apple-logo:hover{
+	filter: brightness(50%);
+}
+nav div img.apple-logo{
+	margin: 10px 50% 0% 50%;
+}
+nav > img.apple-logo{
+	margin: 10px 46% 0% 46%;
+}
+
+/* main navigation styling for 960px width or above */
+nav {
+	white-space: nowrap;
+	background-color: rgba(0,0,0,0.8);
+	backdrop-filter: saturate(180%) blur(20px);
+	width: 100%;
+	position: fixed;
+	z-index: 3;
+}
+nav ul {
+	
+	display: flex;
+	width: auto;
+	justify-content: center;	
+}
+nav ul li a {
+	text-decoration: none;
+	white-space: nowrap;
+	color: #fff;
+	font-family: "SF Text";
+	font-weight: 195;
+	padding: 0px 30px 0px 30px;
+	font-size: 14px;
+    line-height: 3.14286;
+    letter-spacing: -.01em;
+}
+
+/* Removing ugly blue highlight */
+nav ul::selection, nav ul li::selection, img#applelogo::selection {
+	background: rgba(0,0,0,0);
+	}
+
+/* Grey hover over text effect */
+nav ul li:hover {
+	filter: brightness(50%);
+	color: #666;
+	transition: 0.2s;
+	cursor: pointer;
+
+}
+
+/* Navigation for when the page is less than 960px  */
+.pop-out-nav {
+	overflow: hidden;
+	font-family: "SF Text";
+	font-weight: 200;
+	/* height is 0% to hide the nav */
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0, 0.9);
+	overflow-y: hidden;
+	transition: 0.7s;
+	/* z-index: 3; */
+  }
+.pop-out-nav-content {
+	position: relative;
+	top: 0%;
+	width: 100%;
+  }
+.pop-out-nav-content a {
+	  border-color: #333;
+	  border-style: solid;
+	  border-width: 0px 0px 0.018px 0px;
+	  padding: 15px 0px 15px 0px;
+	  margin-left: 8%;
+  }
+.pop-out-nav a {
+	text-decoration: none;
+	font-size: 15px;
+	color: #fff;
+	display: block;
+	transition: 0.3s;
+  }
+  
+.pop-out-nav a:hover {
+	color: #666;
+  }
+.pop-out-nav .closebtn {
+	position: absolute;
+	top: 0px;
+	font-weight: 100;
+	font-size: 40px;
+  }
+
+#openMenuButton {
+	color: #fff;
+	size: 40px;
+	margin: 18px 10px 10px 10px;
+
+  }
+
+.search-bar {
+	font-family: "SF Text";
+	background-color: #282828;
+	color: #fff;
+	font-size: 15px;
+	display: block;
+	border-color: #999;
+	border-style: solid;
+	border-width: 0px 0px 0px 0px;
+	width: 85%;
+	padding: 9px 5px 9px 5px;
+	margin: 2% 0% 2% 7%; 
+}
+
+.search-bar::placeholder {
+    color: #929292; 
+} 
+
+
+#search-line {
+	  border-bottom: 0.018px solid #333; 
+	  width: 100%;
+}
+
+hr {
+	margin: 10px 0px 0px 0px;
+	border-bottom: 0.008px solid rgb(216, 208, 208); 
+}
+
+
+/* Styling for page content below */
+/*Video on inner page. Types.*/
+#video-placeholder {
+	position: relative;	
+}
+video {
+
+	filter: brightness(70%);
+	width: 100%;
+	max-width: 1319px;
+	height: 100%;
+}
+
+video:hover{
+	filter: brightness(80%);
+	transition: 0.25s;
+}
+#video-placeholder .video-caption {
+    position: absolute;
+    bottom: 8em;
+    color: #fff;
+	width: 100%;
+}
+
+/* The squares which hold content are blocks */
+.block {
+	font-family: "SF Text";
+	color: white;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 65vw;
+	max-height: 692px;
+	width: 100%;
+	text-align: center;
+	background-color: black;
+	
+}
+
+
+/* Learn more > and Buy > are styled with these */
+.block ul {	
+	display: flex;
+	justify-content: center;
+}
+.block ul span {
+	margin: 0px 10px 0px 0px;
+}
+.block ul li {
+	margin: 0px 10px 0px 10px;
+}	
+.block ul span, .block ul li, .block ul li a {
+	text-decoration: none;
+	color: #6bf;
+}
+.block ul li:hover {
+	text-decoration: underline;
+}
+/* White blocks are the full-sized blocks with black text*/
+.white-block {
+	margin-top: 12px;
+	color: black;
+	background-color:#f9f9f9; 
+}
+
+/* half blocks refer to the smaller blocks at the bottom*/
+.half-block {
+	color: black;
+	background-color:#f9f9f9; 
+	float: left;
+	width: 49.2%;
+	margin: 12px 0.4% 0 0.4%;
+	
+}
+/* white block but smaller*/
+ .half-block-white-text {
+	color:  #fff;
+	background-color: #000; 
+	float: left;
+	width: 49.2%;
+	margin: 12px 0.4% 0 0.4%;
+
+}
+
+/*Search icon*/
+.material-icons { 
+	color: white;
+	padding: 10px;
+}
+
+h1{	
+	padding-top: 38px;
+	font-family: "SF Display";
+    font-weight: 550;
+	letter-spacing: -.005em;
+}
+h2{
+	padding: 10px;
+	font-family: "SF Text";
+    font-weight: 400;
+    letter-spacing: .008em;
+}
+
+.half-block h1, .half-block-white-text h1 {
+	padding-top:25px;
+	padding-bottom: 5px;
+}
+/* The paragraph under the 2 headings */
+p {
+	padding: 0px 20px 10px 20px;
+	font-family: "SF Text";
+	color: #888;
+    font-weight: 400;
+	letter-spacing: -.016em;
+	display: block;
+}
+
+main {
+	  margin: 0 auto;
+  }
+
+
+footer {
+	font-size: 12px;
+	font-family: "SF Text";
+	display: inline-block;
+	margin-top: 12px;
+	background-color: #f9f9f9; 
+	color: #86868b;
+	font-weight: 200;
+
+}
+
+/* Content blocks inside the footer  */
+.footer-block {
+	width: 80%;
+	margin: 2% 10% 1% 10%;
+  }
+/* Very specific styling for the list of lists for the menu in the footer below*/
+.footer-block > ul{
+	display: flex;
+	justify-content: center;	
+	margin-bottom: 15px;
+	
+}
+
+.footer-block ul li {
+	padding: 15px 30px 0px 0px;
+	font-weight: 300;
+} 
+
+.footer-block ul li a {
+	text-decoration: none; 
+	color: #86868b;
+  
+} 
+
+.footer-block > ul > li > a {	
+	font-weight: bold;
+} 
+
+.footer-block ul li ul :hover{
+	text-decoration: underline;
+}
+
+
+/* All of the block specific formatting is done here, mostly just image management.
+The first 7 blocks are on the home page, index.html and the rest are on jailbreak_types.html.
+
+*/
+
+
+/*NOTE: All iphone mockups were made with MockUPhone using my own screenshots from my personal phones.
+All art generated by MockUPhone is licensed under a Creative Commons Attribution 3.0 Unported License.
+*/
+#block-1{
+	
+	background-color: black;
+	background-image: url("../images/image1.png");
+	background-size: auto 65%, contain;
+}
+
+#block-2{
+
+	background-image: url("../images/image2.png");
+	background-size: auto 65%, contain;
+}
+
+#block-3{
+	background-image: url("../images/image3.png");
+	background-size: auto 80%, contain;
+}
+#block-4{
+	/*	
+	Created with:
+	https://commons.wikimedia.org/wiki/File:Android_robot.svg
+	https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg
+	*/
+	background-image: url("../images/image4.png");
+	background-size: auto 70%, contain;
+}
+#block-5{
+	background-color: #f7ede4;
+	background-image: url("../images/image5.png");
+	background-size: auto 75%, contain;
+}
+#block-6{
+	background-image: url("../images/image6.png");
+	background-size: auto 70%, contain;
+
+}
+#block-7{
+	background-image: url("../images/image7.png");
+	background-size: auto 85%, contain;
+}
+
+#block-8{
+	background: #f9f9f9;
+	height:auto;
+	width:auto; 
+}
+#block-8 p{
+	color:white;
+}
+
+#block-9{
+	height:10%;
+
+}
+#block-10{
+	margin-bottom: 12px;
+	background-image: url("../images/Untethered.png");
+	background-size: auto 50%, contain;
+/*	background-position: center center;*/
+	
+}
+#block-11{
+	margin-bottom: 12px;
+	/*
+	Retrieved from https://commons.wikimedia.org/wiki/File:USB_icon.svg
+	*/
+	background-image: url("../images/USB_icon.svg");
+	background-size: auto 30%, contain;
+/*	background-position: center center;*/
+	
+}
+#block-12{
+	
+	background-image: url("../images/semi-tethered.png");
+	background-size: auto 60%, contain;
+	background-color:#fbd6c7;
+	clear:both;
+	
+	
+}
+
+/* RESPONSIVE */
+
+ /* Scrollbar for pop out navigation if height becomes too small. */
+ @media screen and (max-height: 450px) {
+	.pop-out-nav {overflow-y: auto;}
+  }
+
+
+/* After 960 width, do this.  */
+@media (min-width: 960px) {
+	
+	h1 { font-size: 56px;}
+	h2 { font-size: 27px;}
+	p{ font-size: 17px;}
+	.block ul li { font-size: 21px;} 
+	/* no need for secondary menu if the screen is big enough */
+	#openMenuButton, nav > img.apple-logo{
+		 display: none;
+		}
+	
+  }
+
+/* Under 960 width, responsive */
+@media (max-width: 960px) {
+	nav { justify-content: left;}
+	nav ul { display: none; }
+	#openMenuButton { float:left; }				
+	h1 { font-size: 6vw;}
+	h2 { font-size: 2.5vw;}
+	p{ font-size: 2vw;}
+	.block ul li { font-size: 1.75vw;} 
+  }
+
+  
